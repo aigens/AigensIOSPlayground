@@ -9,22 +9,27 @@
 import Foundation
 import ObjectMapper
 
-class Brand: Mappable{
+public class Brand: Mappable{
     
-    var id: Int64?
-    var name: String?
-    var desc: String?
-    var published: Bool?
-    var limited: Bool?
-    var features: [String]?
-    var stores: [Store]?
+    public var id: Int64?
+    public var name: String?
+    public var desc: String?
+    public var published: Bool?
+    public var limited: Bool?
+    public var features: [String]?
+    public var stores: [Store]?
     
-    required init?(map: Map) {
+    
+    public required init?() {
+        
+    }
+    
+    public required init?(map: Map) {
         
     }
     
     // Mappable
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id    <- map["id"]
         name         <- map["name"]
         desc      <- map["desc"]

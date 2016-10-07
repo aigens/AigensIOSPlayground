@@ -20,7 +20,7 @@ public enum HTTPMethod: String {
    
 }*/
 
-class IQuery{
+public class IQuery{
     
     private var url: String?
     private var params: NSMutableDictionary = [:]
@@ -63,45 +63,45 @@ class IQuery{
         
     }
     
-    @discardableResult func auth() -> Self{
+    @discardableResult public func auth() -> Self{
         
         headers["sid"] = getSid()
         return self
     }
     
     
-    @discardableResult func url( _ url:String) -> Self{
+    @discardableResult public func url( _ url:String) -> Self{
         
         self.url = url
         return self
     }
     
-    @discardableResult func param( _ name:String, _ value:Any) -> Self{
+    @discardableResult public func param( _ name:String, _ value:Any) -> Self{
         
         self.params.setValue(value, forKey: name)
         return self
     }
     
-    @discardableResult func params( _ params:NSDictionary) -> Self{
+    @discardableResult public func params( _ params:NSDictionary) -> Self{
         
         self.params = NSMutableDictionary(dictionary: params)
         return self
     }
     
-    @discardableResult func header( _ name:String, _ value:Any) -> Self{
+    @discardableResult public func header( _ name:String, _ value:Any) -> Self{
         
         self.headers.setValue(value, forKey: name)
         return self
     }
     
-    @discardableResult func headers( _ headers:NSDictionary) -> Self{
+    @discardableResult public func headers( _ headers:NSDictionary) -> Self{
         
         self.headers = NSMutableDictionary(dictionary: headers)
         return self
     }
     
     
-    @discardableResult func method( _ method:HTTPMethod) -> Self{
+    @discardableResult public func method( _ method:HTTPMethod) -> Self{
         
         self.method = method
         return self
@@ -109,27 +109,27 @@ class IQuery{
     
     
     
-    func setSid(sid: String){
+    public func setSid(sid: String){
         
         UserDefaults.standard.set(sid, forKey: "aigens.sid")
 
     }
     
-    func getSid() -> String?{
+    public func getSid() -> String?{
         return UserDefaults.standard.string(forKey: "aigens.sid")
     }
     
-    func setMid(mid: String){
+    public func setMid(mid: String){
         
         UserDefaults.standard.set(mid, forKey: "aigens.mid")
         
     }
     
-    func getMid() -> String?{
+    public func getMid() -> String?{
         return UserDefaults.standard.string(forKey: "aigens.mid")
     }
     
-    func ajax(callback: @escaping(AjaxStatus) -> Void){
+    public func ajax(callback: @escaping(AjaxStatus) -> Void){
         
         let url = self.url
         let method = self.method

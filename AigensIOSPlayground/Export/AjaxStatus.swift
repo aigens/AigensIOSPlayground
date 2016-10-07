@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-class AjaxStatus{
+public class AjaxStatus{
 
-    var code: Int = 0
-    var error: String = ""
-    var jo: NSDictionary!
+    public var code: Int = 0
+    public var error: String = ""
+    public var jo: NSDictionary!
     
     
-    func isSuccess() -> Bool{
+    public func isSuccess() -> Bool{
         
         if self.jo == nil{
             return false
