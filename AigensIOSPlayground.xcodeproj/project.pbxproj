@@ -47,6 +47,7 @@
 		D091C6211D939439004DE095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D091C6231D939439004DE095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D091C62A1D93B65C004DE095 /* AjaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjaxViewController.swift; sourceTree = "<group>"; };
+		D09DF6551DA7993600369CD6 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		D0E2B1871D94EBAD002CE0D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0EB1F541D950AFF00306210 /* AigensIOSPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AigensIOSPlayground.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +94,7 @@
 		D05D149D1DA77ADD006E59C0 /* Export */ = {
 			isa = PBXGroup;
 			children = (
+				D09DF6551DA7993600369CD6 /* Firebase.h */,
 				D06199401DA4EAE3003EC1CB /* Data */,
 				D061994A1DA5E392003EC1CB /* Extensions */,
 				D00B68CC1D93E8BC002F50B1 /* Base */,

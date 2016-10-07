@@ -53,7 +53,7 @@ class AjaxViewController: UIViewController {
         let url = host + "/api/v1/reward/brand/107.json"
         self.urlLabel.text = url
         
-        iq.url(url).ajax(callback: brandCb)
+        iq.url(url).ajax(brandCb)
         
         
     }
