@@ -129,7 +129,7 @@ public class IQuery{
         return UserDefaults.standard.string(forKey: "aigens.mid")
     }
     
-    public func ajax(callback: @escaping(AjaxStatus) -> Void){
+    public func ajax( _ callback: @escaping(AjaxStatus) -> Void){
         
         let url = self.url
         let method = self.method

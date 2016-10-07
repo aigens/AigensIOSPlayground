@@ -36,7 +36,7 @@ extension UIViewController{
     }
     
     
-    var iq: IQuery{
+    public var iq: IQuery{
         
         get{
             return associatedObject(base:self, key: &xoAssociationKey){return IQuery()}
