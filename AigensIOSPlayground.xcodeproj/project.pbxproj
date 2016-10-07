@@ -47,7 +47,7 @@
 		D091C6211D939439004DE095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D091C6231D939439004DE095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D091C62A1D93B65C004DE095 /* AjaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjaxViewController.swift; sourceTree = "<group>"; };
-		D09DF6551DA7993600369CD6 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		D09DF6661DA7BAD900369CD6 /* AigensIOSPlayground-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AigensIOSPlayground-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D0E2B1871D94EBAD002CE0D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0EB1F541D950AFF00306210 /* AigensIOSPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AigensIOSPlayground.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,6 @@
 			children = (
 				D06199461DA4F2C4003EC1CB /* IQuery.swift */,
 				D06199481DA5051F003EC1CB /* AjaxStatus.swift */,
-				D06199531DA648FD003EC1CB /* BaseAppDelegate.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -94,7 +93,6 @@
 		D05D149D1DA77ADD006E59C0 /* Export */ = {
 			isa = PBXGroup;
 			children = (
-				D09DF6551DA7993600369CD6 /* Firebase.h */,
 				D06199401DA4EAE3003EC1CB /* Data */,
 				D061994A1DA5E392003EC1CB /* Extensions */,
 				D00B68CC1D93E8BC002F50B1 /* Base */,
@@ -141,6 +139,7 @@
 		D091C6141D939439004DE095 /* AigensIOSPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				D09DF6631DA7B9F000369CD6 /* Manual */,
 				D05D149D1DA77ADD006E59C0 /* Export */,
 				D0EB1F541D950AFF00306210 /* AigensIOSPlayground.entitlements */,
 				D091C6291D93B61C004DE095 /* Cases */,
@@ -150,6 +149,7 @@
 				D091C61E1D939439004DE095 /* Assets.xcassets */,
 				D091C6201D939439004DE095 /* LaunchScreen.storyboard */,
 				D091C6231D939439004DE095 /* Info.plist */,
+				D09DF6661DA7BAD900369CD6 /* AigensIOSPlayground-Bridging-Header.h */,
 				D0E2B1871D94EBAD002CE0D4 /* GoogleService-Info.plist */,
 			);
 			path = AigensIOSPlayground;
@@ -163,6 +163,14 @@
 				D061994D1DA629F3003EC1CB /* PushViewController.swift */,
 			);
 			name = Cases;
+			sourceTree = "<group>";
+		};
+		D09DF6631DA7B9F000369CD6 /* Manual */ = {
+			isa = PBXGroup;
+			children = (
+				D06199531DA648FD003EC1CB /* BaseAppDelegate.swift */,
+			);
+			path = Manual;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +209,7 @@
 					D091C6111D939438004DE095 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 36RXHYW79N;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -437,12 +446,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AigensIOSPlayground/AigensIOSPlayground.entitlements;
 				DEVELOPMENT_TEAM = 36RXHYW79N;
 				INFOPLIST_FILE = AigensIOSPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aigens.playground.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AigensIOSPlayground-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -453,12 +465,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AigensIOSPlayground/AigensIOSPlayground.entitlements;
 				DEVELOPMENT_TEAM = 36RXHYW79N;
 				INFOPLIST_FILE = AigensIOSPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aigens.playground.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AigensIOSPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
