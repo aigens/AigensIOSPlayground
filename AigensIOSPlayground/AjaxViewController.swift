@@ -137,12 +137,18 @@ class AjaxViewController: UIViewController {
                 
                 self.responseText.text = status.jo.description
                 
+                if let sid = status.jo["sessionId"] as? String{
+                  
+                    let mid = status.jo["memberId"] as! NSNumber
+                    
+                    self.iq.setSid(sid: sid)
+                    self.iq.setMid(mid: mid.stringValue)
+                }else{
+                    debugPrint("incorrect password")
+                    self.responseText.text = "Incorrect password"
+                }
                 
-                let sid = status.jo["sessionId"] as! String
-                let mid = status.jo["memberId"] as! NSNumber
                 
-                self.iq.setSid(sid: sid)
-                self.iq.setMid(mid: mid.stringValue)
             }else{
                 
                 debugPrint("failed")

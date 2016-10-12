@@ -71,6 +71,14 @@ class MasterViewController: UITableViewController{
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+        }else if segue.identifier == "React" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let cell = self.tableView.cellForRow(at: indexPath)
+                let controller = segue.destination as! ReactViewController
+                controller.method = (cell?.reuseIdentifier)!
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
         }
     }
 
@@ -121,6 +129,8 @@ class MasterViewController: UITableViewController{
             self.performSegue(withIdentifier:"Image", sender: self)
         }else if(indexPath.section == 2){
             self.performSegue(withIdentifier:"Push", sender: self)
+        }else if(indexPath.section == 3){
+            self.performSegue(withIdentifier:"React", sender: self)
         }
     }
     
