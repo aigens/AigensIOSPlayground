@@ -52,10 +52,10 @@ public class BaseAppDelegate: UIResponder, UIApplicationDelegate{
             debugPrint("ios 10 push registered")
             
         } else {
-            /*
+            
              let settings: UIUserNotificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
              application.registerUserNotificationSettings(settings)
-             application.registerForRemoteNotifications()*/
+             application.registerForRemoteNotifications()
         }
         
         
