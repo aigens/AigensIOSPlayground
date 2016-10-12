@@ -13,6 +13,7 @@ class ReactViewController: UIViewController {
     
    
     var method : String!
+    var bridge : RCTBridge!
     
     
     override func viewDidLoad() {
@@ -56,13 +57,18 @@ class ReactViewController: UIViewController {
         
         let jsCodeLocation = URL(string: "http://192.168.111.166:8081/index.ios.bundle?platform=ios&dev=true")
         
+        self.bridge = RCTBridge(bundleURL: jsCodeLocation, moduleProvider: nil, launchOptions: nil)
         
+        /*
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
-            moduleName: "Project",
+            moduleName: "ReactNativePlayground",
             initialProperties: nil,
             launchOptions: nil
-        )
+        )*/
+        
+        let rootView = RCTRootView(bridge: bridge, moduleName: "ReactNativePlayground", initialProperties: nil)
+        
         let vc = UIViewController()
         vc.view = rootView
         self.present(vc, animated: true, completion: nil)
