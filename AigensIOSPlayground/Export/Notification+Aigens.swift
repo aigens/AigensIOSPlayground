@@ -9,5 +9,5 @@
 import Foundation
 
 extension Notification.Name {
-    static let pushHandler = Notification.Name("pushHandler")
+    public static let pushHandler = Notification.Name("pushHandler")
 }
