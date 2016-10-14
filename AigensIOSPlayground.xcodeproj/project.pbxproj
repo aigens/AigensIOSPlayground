@@ -24,6 +24,9 @@
 		D091C6221D939439004DE095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D091C6201D939439004DE095 /* LaunchScreen.storyboard */; };
 		D091C62B1D93B65C004DE095 /* AjaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091C62A1D93B65C004DE095 /* AjaxViewController.swift */; };
 		D09630AA1DAE077F004A2836 /* ReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09630A91DAE077F004A2836 /* ReactViewController.swift */; };
+		D0C0D9BB1DB0AF66007E9F7D /* BaseReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D9BA1DB0AF66007E9F7D /* BaseReactViewController.swift */; };
+		D0C0D9BD1DB0B07A007E9F7D /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0C0D9BC1DB0B07A007E9F7D /* Settings.plist */; };
+		D0C0D9BF1DB0B6A9007E9F7D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D9BE1DB0B6A9007E9F7D /* Settings.swift */; };
 		D0E2B1881D94EBAD002CE0D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0E2B1871D94EBAD002CE0D4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		D091C62A1D93B65C004DE095 /* AjaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjaxViewController.swift; sourceTree = "<group>"; };
 		D09630A91DAE077F004A2836 /* ReactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactViewController.swift; sourceTree = "<group>"; };
 		D09DF6661DA7BAD900369CD6 /* AigensIOSPlayground-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AigensIOSPlayground-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		D0C0D9BA1DB0AF66007E9F7D /* BaseReactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseReactViewController.swift; sourceTree = "<group>"; };
+		D0C0D9BC1DB0B07A007E9F7D /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		D0C0D9BE1DB0B6A9007E9F7D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D0E2B1871D94EBAD002CE0D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0EB1F541D950AFF00306210 /* AigensIOSPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AigensIOSPlayground.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +94,7 @@
 			children = (
 				D06199461DA4F2C4003EC1CB /* IQuery.swift */,
 				D06199481DA5051F003EC1CB /* AjaxStatus.swift */,
+				D0C0D9BE1DB0B6A9007E9F7D /* Settings.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 				D091C6231D939439004DE095 /* Info.plist */,
 				D09DF6661DA7BAD900369CD6 /* AigensIOSPlayground-Bridging-Header.h */,
 				D0E2B1871D94EBAD002CE0D4 /* GoogleService-Info.plist */,
+				D0C0D9BC1DB0B07A007E9F7D /* Settings.plist */,
 			);
 			path = AigensIOSPlayground;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D06199531DA648FD003EC1CB /* BaseAppDelegate.swift */,
+				D0C0D9BA1DB0AF66007E9F7D /* BaseReactViewController.swift */,
 			);
 			path = Manual;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				D0E2B1881D94EBAD002CE0D4 /* GoogleService-Info.plist in Resources */,
 				D091C61F1D939439004DE095 /* Assets.xcassets in Resources */,
 				D091C61D1D939439004DE095 /* Main.storyboard in Resources */,
+				D0C0D9BD1DB0B07A007E9F7D /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +332,8 @@
 				D06199501DA63D53003EC1CB /* Notification+Aigens.swift in Sources */,
 				D00B68CB1D93CD95002F50B1 /* ImageViewController.swift in Sources */,
 				D09630AA1DAE077F004A2836 /* ReactViewController.swift in Sources */,
+				D0C0D9BF1DB0B6A9007E9F7D /* Settings.swift in Sources */,
+				D0C0D9BB1DB0AF66007E9F7D /* BaseReactViewController.swift in Sources */,
 				D06199451DA4F127003EC1CB /* Store.swift in Sources */,
 				D06199431DA4EB11003EC1CB /* Brand.swift in Sources */,
 				D061994E1DA629F3003EC1CB /* PushViewController.swift in Sources */,

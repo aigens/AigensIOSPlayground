@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>REACT_BUNDLE</key>
+	<string>http://192.168.111.166:8081/index.ios.bundle?platform=ios&amp;dev=true</string>
+	<key>API_ENDPOINT</key>
+	<string>http://aigensstoretest.appspot.com</string>
+	<key>API_ENDPOINT_SECURE</key>
+	<string>https://aigensstoretest.appspot.com</string>
+</dict>
+</plist>
